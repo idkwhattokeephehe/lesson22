@@ -1,0 +1,62 @@
+<!--
+1) Start the HTML document with `<!DOCTYPE html>` and open `<html>`.
+
+2) Inside the `<body>`:
+   a) Create an empty paragraph `<p id="demo"></p>` to display the output.
+
+3) Add a `<script>` tag to write JavaScript.
+
+4) Create a variable `day`:
+   a) This will store the name of the current day.
+
+5) Use a `switch` statement to check today's day number:
+   a) Get the day number using `new Date().getDay()`.
+   b) Possible values are 0 to 6.
+
+6) Add cases in the switch:
+   a) Case 0 → set `day = "Sunday"` and use `break`.
+   b) Case 1 → set `day = "Monday"` and use `break`.
+   c) Case 2 → set `day = "Tuesday"` and use `break`.
+   d) Case 3 → set `day = "Wednesday"` and use `break`.
+   e) Case 4 → set `day = "Thursday"` and use `break`.
+   f) Case 5 → set `day = "Friday"` and use `break`.
+   g) Case 6 → set `day = "Saturday"`.
+
+7) Display the final message on the webpage:
+   a) Use `document.getElementById("demo").innerHTML`
+   b) Show: `"Today is " + day`
+
+8) Close all tags properly.
+-->
+<!DOCTYPE html>
+<html>
+   <body>
+      <p id="demo"></p>
+      <script>
+         let day;
+         switch (new Date().getDay()) {
+            case 0:
+            day = "Sunday";
+            break;
+            case1:
+            day = "Monday";
+            break;
+            case 2:
+            day = "Tuesday";
+            break;
+            case 3:
+            day = "Wednesday";
+            break;
+            case 4:
+            day = "Thursday";
+            break;
+            case 5:
+            day = "Friday";
+            break;
+            case 6:
+            day = "Saturday";
+         }
+         document.getElementById("demo").innerHTML = "Today is " + day;
+      </script>
+   </body>
+</html>

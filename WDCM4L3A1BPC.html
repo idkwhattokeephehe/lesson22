@@ -1,0 +1,48 @@
+<!--
+1) Start the HTML document with `<!DOCTYPE html>` and open `<html>`.
+
+2) Inside the `<body>`:
+   a) Add a heading `<h2>` with text: "JavaScript String Methods".
+   b) Add a paragraph `<p>` with text: "Basic Methods".
+
+3) Add a `<script>` tag to write JavaScript.
+
+4) Create a string variable:
+   a) `str = "AmAzInG"`
+
+5) Show basic string methods using `document.write()`:
+   a) Print `str.toUpperCase()` to convert to uppercase.
+   b) Print `<br>` to move to the next line.
+   c) Print `str.toLowerCase()` to convert to lowercase.
+   d) Print `<br>` again.
+   e) Print `str.startsWith('i')` to check if the string starts with 'i' (true/false).
+   f) Print `<br>` again.
+
+6) Test method using Regular Expression:
+   a) Create a string `str1 = "I learnt about Methods"`.
+   b) Create a pattern using `new RegExp("about")`.
+   c) Use `.test()` to check if the pattern exists in the string and store result in `res`.
+   d) Print `res` (true/false).
+
+7) Close all tags properly.
+-->
+<!DOCTYPE html>
+<html>
+   <body>
+      <h2>JavaScript String Methods</h2>
+      <p>Basic Methods</p>
+      <script>
+         let str ="AmAzInG";
+         document.write(str.toUpperCase());
+         document.write("<br>");
+         document.write(str.toLowerCase());
+         document.write("<br>");
+         document.write(str.startsWith('i'));
+         document.write("<br>");
+         let str1 = "I learnt about Methods";
+         let pattern = new RegExp("about");
+         let res = pattern.test(str1);
+         document.write(res);
+      </script>
+   </body>
+</html>
